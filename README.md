@@ -90,7 +90,6 @@ The app integrates with the **Google Books API** for fetching book data:
 | `json_serializable` | ^6.8.0 | **JSON code generation** creates `.fromJson()` and `.toJson()` methods |
 | `flutter_lints` | ^5.0.0 | **Code quality** rules and best practices enforcement |
 | `flutter_launcher_icons` | ^0.13.1 | **App icon generation** for all platforms |
-| `flutter_native_splash` | ^2.4.0 | **Splash screen generation** for native platforms |
 
 ## 🚀 Getting Started
 
@@ -153,7 +152,7 @@ flutter test --coverage
 flutter pub run flutter_launcher_icons:main
 ```
 
-**Note**: See `generate_icon.md` for detailed instructions on creating the custom app icon.
+**Note**: See `setup_icons_and_splash.md` for detailed instructions on creating the custom app icon.
 
 ## 📁 Project Structure Deep Dive
 

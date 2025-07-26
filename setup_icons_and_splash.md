@@ -1,10 +1,9 @@
-# 🎨 Complete Icon & Splash Screen Setup
+# 🎨 Complete Icon Setup
 
 ## 🚨 Current Issue
 You're seeing the old Flutter icon because:
 1. The PNG icon file is missing
-2. The splash screen hasn't been configured
-3. Icons haven't been generated yet
+2. Icons haven't been generated yet
 
 ## 🔧 Quick Fix Steps
 
@@ -28,13 +27,10 @@ cp android/app/src/main/res/mipmap-hdpi/ic_launcher.png assets/icons/app_icon.pn
 flutter pub get
 ```
 
-### Step 3: Generate Icons & Splash Screen
+### Step 3: Generate Icons
 ```bash
 # Generate launcher icons
 flutter pub run flutter_launcher_icons:main
-
-# Generate splash screen
-flutter pub run flutter_native_splash:create
 ```
 
 ### Step 4: Clean & Rebuild
@@ -53,7 +49,6 @@ flutter run
 
 After following these steps, you should see:
 - ✅ **Custom app icon** instead of Flutter's default
-- ✅ **Custom splash screen** with your app icon
 - ✅ **Consistent branding** across the app
 
 ## 🔍 Troubleshooting
@@ -64,7 +59,6 @@ After following these steps, you should see:
 flutter clean
 flutter pub get
 flutter pub run flutter_launcher_icons:main
-flutter pub run flutter_native_splash:create
 flutter run
 ```
 
@@ -77,18 +71,16 @@ flutter run
 
 - **Android**: Icons will appear in launcher, app switcher, and settings
 - **iOS**: Icons will appear on home screen and app switcher
-- **Splash Screen**: Will show during app startup on all platforms
+- **Web**: Icons will appear in browser tabs and bookmarks
 
 ## 🎨 Customization
 
 To customize colors or images:
 1. Edit the `flutter_launcher_icons` section in `pubspec.yaml`
-2. Edit the `flutter_native_splash` section in `pubspec.yaml`
-3. Re-run the generation commands
+2. Re-run the generation commands
 
 ## 🚀 Final Check
 
 After setup, your app should have:
 - Custom launcher icon (person reading a book)
-- Custom splash screen with app branding
 - Consistent theme colors (#F5E6D3, #8B4513) 

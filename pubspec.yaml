@@ -43,7 +43,6 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_launcher_icons: ^0.13.1
-  flutter_native_splash: ^2.4.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -114,19 +113,4 @@ flutter_launcher_icons:
     generate: true
     image_path: "assets/icons/app_icon.png"
 
-# Flutter Native Splash configuration
-flutter_native_splash:
-  color: "#F5E6D3"
-  image: assets/icons/app_icon.png
-  branding: assets/icons/app_icon.png
-  color_dark: "#8B4513"
-  image_dark: assets/icons/app_icon.png
-  branding_dark: assets/icons/app_icon.png
-  
-  android_12:
-    image: assets/icons/app_icon.png
-    icon_background_color: "#F5E6D3"
-    image_dark: assets/icons/app_icon.png
-    icon_background_color_dark: "#8B4513"
-  
-  web: false
+
